@@ -117,7 +117,7 @@ def check_tokens():
     vars = [PRACTICUM_TOKEN, TELEGRAM_TOKEN, TELEGRAM_CHAT_ID]
     check_result = True
     if None in vars:
-        check_result = False
+        return not check_result
     return check_result
 
 
